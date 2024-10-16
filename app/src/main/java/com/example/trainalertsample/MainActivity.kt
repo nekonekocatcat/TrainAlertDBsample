@@ -35,6 +35,7 @@ import androidx.navigation.navArgument
 class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         // データベースのインスタンスを作成
+        Log.d("life","onCreate")
         val database = Room.databaseBuilder(
             applicationContext,
             AppDatabase::class.java,
